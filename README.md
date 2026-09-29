@@ -24,7 +24,7 @@ Exploratory analysis of a retail sales dataset (9,800 orders, 18 columns, 2015-2
 - [Finding 3:The monthly sales trend as shown in the above figure is the time = 01/2019]
 
 ## Charts
-![Sales by category](chart1_category.png)
+![Sales by category](Sales by category.png)
 ![Monthly trend](chart3_monthly.png)
 
 ## Tools
