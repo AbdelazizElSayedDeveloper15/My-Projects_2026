@@ -2,7 +2,7 @@
 
 Exploratory analysis of a retail sales dataset (9,800 orders, 18 columns, 2015-2018) using Python, Pandas and Matplotlib.
 
- Dataset: train.csv — https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
+**Dataset:** train.csv — https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 
  Business questions
 1. Which categories and sub-categories drive the most sales?
@@ -12,7 +12,7 @@ Exploratory analysis of a retail sales dataset (9,800 orders, 18 columns, 2015-2
 
  Data cleaning
 - Converted order and ship dates to datetime format
-- Checked for duplicate rows with `df.duplicated().sum()` — none found.
+- Checked for duplicate rows with `df.duplicated().sum()` — none found
 - Found 11 missing postal codes, all from Burlington, Vermont; filled them with the city's correct ZIP code (05401) after confirming it manually
 - Added a Year column to support the trend analysis
 
@@ -24,7 +24,6 @@ Exploratory analysis of a retail sales dataset (9,800 orders, 18 columns, 2015-2
 - The Consumer segment brings in the most revenue, well ahead of Corporate and Home Office.
 
  Charts
- 
 ![Sales by category](Sales_by_category.png)
 ![Top sub-categories](Top_subcategories.png)
 ![Monthly trend](Monthly_trend.png)
@@ -32,7 +31,7 @@ Exploratory analysis of a retail sales dataset (9,800 orders, 18 columns, 2015-2
 ![Order value distribution](Order_value_distribution.png)
 
  Tools
- 
+
 Python, Pandas, Matplotlib, Google Colab
 
  Limitations
