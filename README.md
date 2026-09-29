@@ -1,34 +1,39 @@
-# My-Projects_2026
-I'll be posting my projects that I 've completed whether in the university or after graduation from university
-# Sales Data Analysis & Visualisation
+ Sales Data Analysis & Visualisation
 
 Exploratory analysis of a retail sales dataset (9,800 orders, 18 columns, 2015-2018) using Python, Pandas and Matplotlib.
 
-**Dataset:** [train.CSV] - [https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting]
+ Dataset: train.csv — https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 
-## Business questions
+ Business questions
 1. Which categories and sub-categories drive the most sales?
 2. Which region underperforms?
 3. How did sales change from 2015 to 2018, and is there seasonality?
 4. Which customer segment brings the most revenue?
 
-## Data cleaning
-- Converted order and ship dates (day/month/year) to datetime
-- Checked for duplicates (was found and cleaned up)
-- Handled 11 missing postal codes [What I did was as follows I used the command df.isnull() .sum()]
-- Added a Year column for trend analysis
+ Data cleaning
+- Converted order and ship dates to datetime format
+- Checked for duplicate rows with `df.duplicated().sum()` — [state the real result: none found, or how many were removed]
+- Found 11 missing postal codes, all from Burlington, Vermont; filled them with the city's correct ZIP code (05401) after confirming it manually
+- Added a Year column to support the trend analysis
 
-## Key findings
-- [Finding 1:The most sold category out of all the categories is the Technology Category by = 800,000]
-- [Finding 2:As we understood from the previous chart that the most sold sub category out 10 which is Phones by = 300,000]
-- [Finding 3:The monthly sales trend as shown in the above figure is the time = 01/2019]
+ Key findings
+- Technology is the top-selling category, at roughly $827,000 in total sales — ahead of Furniture ($728,700) and Office Supplies ($705,400).
+- Phones is the top-selling sub-category, at roughly $327,800, followed closely by Chairs at $322,800.
+- Monthly sales show a rising trend from 2015 to 2018, peaking in November 2018 at close to $118,000, with a recurring pattern of stronger sales in the final quarter of each year.
+- The West region leads in sales, while the South region underperforms.
+- The Consumer segment brings in the most revenue, well ahead of Corporate and Home Office.
 
-## Charts
+ Charts
 ![Sales by category](Sales_by_category.png)
-![Monthly trend](Monthly_trend.png)
+![Top sub-categories](Top_subcategories.png)
+![Monthly trend](Monthly_Trend.png)
+![Sales by region and segment](Sales_by_region_segment.png)
+![Order value distribution](Order_value_distribution.png)
 
-## Tools
+ Tools
+ 
 Python, Pandas, Matplotlib, Google Colab
 
-## Limitations
-The dataset has no profit column, so the analysis covers sales only.
+ Limitations
+ 
+The dataset has no profit column, so this analysis covers sales volume only, not profitability.
