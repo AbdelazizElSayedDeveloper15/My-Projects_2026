@@ -27,7 +27,7 @@ Exploratory analysis of a retail sales dataset (9,800 orders, 18 columns, 2015-2
  
 ![Sales by category](Sales_by_category.png)
 ![Top sub-categories](Top_subcategories.png)
-![Monthly trend](Monthly_Trend.png)
+![Monthly trend](Monthly_trend.png)
 ![Sales by region and segment](Sales_by_region_segment.png)
 ![Order value distribution](Order_value_distribution.png)
 
